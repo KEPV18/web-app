@@ -1,0 +1,176 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 240, 240, 240; /* Lighter gray */
+  --background-end-rgb: 255, 255, 255;
+
+  /* Google Sheets Inspired Palette (Light) */
+  --gs-light-background: 255, 255, 255;
+  --gs-light-foreground: 32, 33, 36; /* Near black */
+  --gs-light-muted-foreground: 95, 99, 104; /* Dark gray */
+  --gs-light-card-background: 255, 255, 255;
+  --gs-light-card-border: 218, 220, 224; /* Light gray border */
+  --gs-light-input-background: 255, 255, 255;
+  --gs-light-input-border: 218, 220, 224;
+  --gs-light-primary: 26, 115, 232; /* Google Blue */
+  --gs-light-primary-foreground: 255, 255, 255;
+  --gs-light-secondary: 241, 243, 244; /* Very light gray */
+  --gs-light-secondary-foreground: 32, 33, 36;
+  --gs-light-accent: 232, 240, 254; /* Light blue accent */
+  --gs-light-accent-foreground: 26, 115, 232;
+  --gs-light-destructive: 217, 48, 37; /* Google Red */
+  --gs-light-destructive-foreground: 255, 255, 255;
+  --gs-light-success: 52, 168, 83; /* Google Green */
+  --gs-light-success-foreground: 255, 255, 255;
+  --gs-light-warning: 251, 188, 5; /* Google Yellow */
+  --gs-light-warning-foreground: 32, 33, 36;
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 20, 20, 20; /* Darker gray */
+  --background-end-rgb: 0, 0, 0;
+
+  /* Google Sheets Inspired Palette (Dark) */
+  --gs-dark-background: 32, 33, 36; /* Dark gray */
+  --gs-dark-foreground: 232, 234, 237; /* Light gray */
+  --gs-dark-muted-foreground: 154, 160, 166; /* Medium gray */
+  --gs-dark-card-background: 40, 41, 44; /* Slightly lighter dark gray */
+  --gs-dark-card-border: 59, 64, 69; /* Dark border */
+  --gs-dark-input-background: 40, 41, 44;
+  --gs-dark-input-border: 95, 99, 104; /* Darker border for input */
+  --gs-dark-primary: 138, 180, 248; /* Lighter Google Blue */
+  --gs-dark-primary-foreground: 32, 33, 36;
+  --gs-dark-secondary: 59, 64, 69; /* Medium dark gray */
+  --gs-dark-secondary-foreground: 232, 234, 237;
+  --gs-dark-accent: 46, 58, 74; /* Dark blue accent */
+  --gs-dark-accent-foreground: 138, 180, 248;
+  --gs-dark-destructive: 242, 139, 130; /* Lighter Google Red */
+  --gs-dark-destructive-foreground: 32, 33, 36;
+  --gs-dark-success: 129, 201, 149; /* Lighter Google Green */
+  --gs-dark-success-foreground: 32, 33, 36;
+  --gs-dark-warning: 253, 216, 53; /* Lighter Google Yellow */
+  --gs-dark-warning-foreground: 32, 33, 36;
+}
+
+@layer base {
+  * {
+    @apply border-border; /* Use CSS variables defined below */
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  /* Apply Google Sheets inspired theme */
+  :root {
+    --background: rgb(var(--gs-light-background));
+    --foreground: rgb(var(--gs-light-foreground));
+    --muted: rgb(var(--gs-light-secondary));
+    --muted-foreground: rgb(var(--gs-light-muted-foreground));
+    --popover: rgb(var(--gs-light-card-background));
+    --popover-foreground: rgb(var(--gs-light-foreground));
+    --card: rgb(var(--gs-light-card-background));
+    --card-foreground: rgb(var(--gs-light-foreground));
+    --border: rgb(var(--gs-light-card-border));
+    --input: rgb(var(--gs-light-input-border));
+    --primary: rgb(var(--gs-light-primary));
+    --primary-foreground: rgb(var(--gs-light-primary-foreground));
+    --secondary: rgb(var(--gs-light-secondary));
+    --secondary-foreground: rgb(var(--gs-light-secondary-foreground));
+    --accent: rgb(var(--gs-light-accent));
+    --accent-foreground: rgb(var(--gs-light-accent-foreground));
+    --destructive: rgb(var(--gs-light-destructive));
+    --destructive-foreground: rgb(var(--gs-light-destructive-foreground));
+    --success: rgb(var(--gs-light-success));
+    --success-foreground: rgb(var(--gs-light-success-foreground));
+    --warning: rgb(var(--gs-light-warning));
+    --warning-foreground: rgb(var(--gs-light-warning-foreground));
+    --ring: rgb(var(--gs-light-primary)); /* Ring color */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: rgb(var(--gs-dark-background));
+    --foreground: rgb(var(--gs-dark-foreground));
+    --muted: rgb(var(--gs-dark-secondary));
+    --muted-foreground: rgb(var(--gs-dark-muted-foreground));
+    --popover: rgb(var(--gs-dark-card-background));
+    --popover-foreground: rgb(var(--gs-dark-foreground));
+    --card: rgb(var(--gs-dark-card-background));
+    --card-foreground: rgb(var(--gs-dark-foreground));
+    --border: rgb(var(--gs-dark-card-border));
+    --input: rgb(var(--gs-dark-input-border));
+    --primary: rgb(var(--gs-dark-primary));
+    --primary-foreground: rgb(var(--gs-dark-primary-foreground));
+    --secondary: rgb(var(--gs-dark-secondary));
+    --secondary-foreground: rgb(var(--gs-dark-secondary-foreground));
+    --accent: rgb(var(--gs-dark-accent));
+    --accent-foreground: rgb(var(--gs-dark-accent-foreground));
+    --destructive: rgb(var(--gs-dark-destructive));
+    --destructive-foreground: rgb(var(--gs-dark-destructive-foreground));
+    --success: rgb(var(--gs-dark-success));
+    --success-foreground: rgb(var(--gs-dark-success-foreground));
+    --warning: rgb(var(--gs-dark-warning));
+    --warning-foreground: rgb(var(--gs-dark-warning-foreground));
+    --ring: rgb(var(--gs-dark-primary)); /* Ring color */
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+    /* Add subtle background gradient */
+    /* background-image: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb))); */
+    /* background-repeat: no-repeat; */
+  }
+  /* Improve focus rings */
+  *:focus-visible {
+      @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+  /* Consistent card styling */
+  .card {
+      @apply rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-md;
+  }
+  /* Input styling */
+  input[type="number"], input[type="text"], input[type="date"], select {
+      @apply bg-background;
+  }
+  /* Button hover/active states */
+  .btn {
+      @apply transition-transform duration-100 ease-in-out active:scale-95;
+  }
+}
+
+/* Add subtle animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Arabic font adjustments if needed */
+[lang="ar"] body {
+  /* font-family: 'Your Preferred Arabic Font', sans-serif; */
+  /* Example: font-family: 'Tajawal', sans-serif; */
+}
+
+/* Ensure charts are responsive */
+canvas {
+  max-width: 100%;
+  height: auto !important; /* Override inline height if necessary */
+}
+
+/* Progress bar animation */
+.progress-bar > div {
+    transition: width 0.5s ease-out;
+}
+
+
