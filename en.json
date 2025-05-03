@@ -1,0 +1,119 @@
+{
+  "dashboard": "Dashboard",
+  "loading": "Loading...",
+  "sessionRestored": "Session restored from local storage.",
+  "failedToLoadSheet": "Failed to load data from Google Sheets. Using local data if available.",
+  "pendingSyncAttempt": "Attempting to sync pending data...",
+  "pendingSyncSuccess": "Pending data synced successfully!",
+  "pendingSyncError": "Failed to sync pending data. Will retry later.",
+  "hourlyReminder": "You've been working for {hours} {hour_plural}. Don't forget to log your progress!",
+  "savingProgress": "Saving progress...",
+  "saveSuccess": "Progress saved successfully!",
+  "saveErrorSheet": "Failed to save progress to Google Sheets. Saved locally for later sync.",
+  "saveErrorRow": "Could not find today's row to save data.",
+  "progressSavedNotificationTitle": "Progress Saved",
+  "progressSavedNotificationBody": "{videos} videos and {hours} hours saved.",
+  "workScheduleChanged": "Work schedule changed to {days} days a week.",
+  "darkModeSwitched": "Switched to Dark Mode.",
+  "lightModeSwitched": "Switched to Light Mode.",
+  "notificationsEnabled": "Desktop notifications enabled.",
+  "notificationsDisabled": "Desktop notifications disabled.",
+  "notificationsBlocked": "Browser has blocked notifications. Please enable them in settings.",
+  "notificationPermissionGranted": "Desktop notification permission granted successfully!",
+  "notificationPermissionDenied": "Desktop notification permission denied.",
+  "notificationPermissionGrantedBody": "Important alerts will be shown here.",
+
+  "header": {
+    "title": "Video Analytics Pro",
+    "notifications": "Notifications",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+
+  "timer": {
+    "title": "Timer",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "stopAndSave": "Stop & Save",
+    "confirmResetTitle": "Confirm Reset",
+    "confirmResetBody": "Are you sure you want to reset the timer and logged videos? This action cannot be undone.",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "timerStarted": "Timer started.",
+    "timerPaused": "Timer paused.",
+    "timerResumed": "Timer resumed.",
+    "timerReset": "Timer and logged videos reset."
+  },
+
+  "counter": {
+    "title": "Video Counter",
+    "autoMode": "Auto Mode",
+    "addVideoManual": "Add Video (Manual)",
+    "interval": "Interval",
+    "speed": "Speed: {speed} videos/min",
+    "autoModeActive": "Auto Mode Active (Video every {interval}s) - Next in: {countdown}s",
+    "autoModeReady": "Auto Mode Ready (Video every {interval}s)",
+    "officialDataTitle": "Official Data (from Google Sheets)",
+    "videos": "Videos",
+    "hours": "Hours"
+  },
+
+  "progressBars": {
+    "title": "Progress vs Targets",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "videos": "Videos",
+    "hours": "Hours",
+    "target": "Target",
+    "workSchedule": "Work Schedule",
+    "days6": "6 Days/Week",
+    "days7": "7 Days/Week (Vacation)"
+  },
+
+  "charts": {
+    "title": "Weekly Performance Charts (Sun - Sat)",
+    "videoChartTitle": "Weekly Videos (Logged vs Official)",
+    "speedChartTitle": "Weekly Speed (Logged vs Official)",
+    "videosLoggedLabel": "Videos Logged",
+    "videosOfficialLabel": "Videos Official",
+    "speedLoggedLabel": "Speed Logged (Vids/Min)",
+    "speedOfficialLabel": "Speed Official (Vids/Min)",
+    "yAxisSpeedLabel": "Videos / Minute"
+  },
+
+  "officialData": {
+    "title": "Official Data Entry",
+    "date": "Date: {date}",
+    "tracked": "Tracked (Current Session)",
+    "videos": "Videos",
+    "hours": "Hours",
+    "official": "Official (Enter & Save to Sheet)",
+    "saveButton": "Save Official Data",
+    "saving": "Saving...",
+    "saveSuccess": "Official data saved successfully!",
+    "saveError": "Failed to save official data."
+  },
+
+  "settings": {
+    "title": "Settings",
+    "exportTitle": "Data Export (CSV)",
+    "exportDaily": "Export Daily",
+    "exportWeekly": "Export Weekly",
+    "exportMonthly": "Export Monthly",
+    "languageTitle": "Language",
+    "selectLanguage": "Select language",
+    "english": "English",
+    "arabic": "العربية",
+    "languageSoon": "Language switching will be available soon.",
+    "notificationsTitle": "Desktop Notifications",
+    "notificationStatusBlocked": "Blocked by browser",
+    "notificationStatusClickToEnable": "Click to enable",
+    "notificationStatusEnabled": "Enabled",
+    "notificationStatusDisabled": "Disabled (in app)",
+    "notificationEnableInBrowser": "Please enable notifications in your browser settings."
+  }
+}
+
